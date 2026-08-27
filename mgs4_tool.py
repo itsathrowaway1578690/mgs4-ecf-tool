@@ -1,19 +1,4 @@
 #!/usr/bin/env python3
-"""
-Decrypt or re-encrypt MGS4 Master Collection .ecf configuration files.
-
-The transform is symmetric XOR:
-- Key: MGS4ConfigFileSecureKey@2024
-- 28-byte blocks
-- Rotate the key left by one byte for each successive block
-
-Usage:
-    python mgs4_ecf_tool.py decrypt mgs4.ecf mgs4.ini
-    python mgs4_ecf_tool.py encrypt mgs4.ini mgs4.ecf
-
-"decrypt" and "encrypt" perform the same byte transform; both commands
-are provided simply to make the intended operation clear.
-"""
 
 from pathlib import Path
 import argparse
