@@ -7,6 +7,8 @@ Install python.
 
 Backup files to a separate location.
 
+Add mgs4_tool.py to the directory you backed up the config files.
+
 Open CMD and go to the folder you have the backup files then run
 
 python mgs4_tool.py decrypt FILENAME.ecf FILENAME.ini
